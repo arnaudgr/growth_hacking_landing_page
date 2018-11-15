@@ -8,7 +8,9 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
+
   # config.secret_key = '63dea2ba9ac2ab16dc3160d1dc264ace956f100df34802c00d2da36214d8f1a91b48e5ce1287fe590b23cdb565207a5a0f29a2d5802d966bc4ab4caf0371425e'
+
   
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -114,7 +116,9 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '0ede860eeac6069e689caf8889bec288ec74323a6f6a7a1f494aeee1da97f6a832158059fcc7f00fa9e0156b736cf5ef61d8d182eef0dd2d73eb158c108b4c74'
+
+  # config.pepper = '18280efecf4ffb46fd505e29a0c6c375374196d45af4a9ea78569f4bb9f4188546dcf31761b45b1eb36d306a93559705f334b390d9ad8530fa164aefb8a08388'
+
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -163,7 +167,9 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length.
-  # config.password_length = 6..128
+
+  config.password_length = 6..128
+
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
@@ -209,7 +215,10 @@ Devise.setup do |config|
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.
-  # config.reset_password_within = 6.hours
+
+
+  config.reset_password_within = 6.hours
+
 
   # When set to false, does not sign a user in automatically after their password is
   # reset. Defaults to true, so a user is signed in automatically after a reset.

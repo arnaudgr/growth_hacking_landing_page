@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	
+
   devise_for :users
 	get "/general", to: 'controller#general'
 	post "/register", to: 'contacts#create'
