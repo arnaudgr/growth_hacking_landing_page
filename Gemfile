@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 ####### gem mailer charles ######
 
 gem 'mandrill-api'
-	
+
 gem 'gibbon', '~> 1.2.0'
 
 gem 'dotenv', groups: [:development, :test]
@@ -72,3 +72,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Bot messenger
+gem 'facebook-messenger'
+gem 'nokogiri'
