@@ -16,4 +16,30 @@
 @import "bootstrap";
 @import "bootstrap-theme";
 
+.temoignage-photo
+{
+	border-radius: 50%;
+}
 
+.julien-texte
+{
+	
+	display: none;
+}
+
+.julien:hover .julien-texte
+{
+	display: run-in;
+	top: 0px;
+	left: 0px;
+}
+
+#kaliane
+{
+	overflow:hidden;
+}
+
+#kaliane
+{
+	display: block;
+}
