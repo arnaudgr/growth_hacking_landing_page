@@ -24,6 +24,7 @@ gem 'devise'
 gem 'gibbon', '~> 1.2.0'
 
 gem 'dotenv', groups: [:development, :test]
+gem 'devise'
 
 ######################################""
 
