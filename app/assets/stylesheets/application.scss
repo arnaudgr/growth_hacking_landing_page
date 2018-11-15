@@ -15,31 +15,66 @@
  */
 @import "bootstrap";
 @import "bootstrap-theme";
+@import "grayscale";
 
 .temoignage-photo
 {
 	border-radius: 50%;
 }
 
-.julien-texte
+.dropdown
+{
+    
+    display: none;
+    background-color: #edfffa;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -600px;
+    text-align: justify;
+}
+
+.dropdown-title 
+{ 
+text-align: center 
+}
+
+.photo:hover .dropdown
+{
+    display: block;
+}
+
+body
+{
+background: rgb(211,211,211);
+background: linear-gradient(90deg, rgba(211,211,211,1) 0%, rgba(255,255,255,1) 72%, rgba(255,255,255,1) 100%);
+
+}
+nav-bar
+{
+	background-color: blue;
+}
+.btn-form
+{
+	align: center;
+}
+.container-image
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-right
+{
+	padding-left: 30px;
+	right: 0px;
+}
+.element-image
 {
 	
-	display: none;
 }
-
-.julien:hover .julien-texte
+#form
 {
-	display: run-in;
-	top: 0px;
-	left: 0px;
-}
-
-#kaliane
-{
-	overflow:hidden;
-}
-
-#kaliane
-{
-	display: block;
+	background-image: url(asset_path("test-coding.png"));
 }
