@@ -1,222 +1,336 @@
+<div class="container">
+  <nav class="blog-nav">
+    <a class="blog-nav-item" href="#">Description</a>
+    <a class="blog-nav-item" href="#">FAQ</a>
+    <a class="blog-nav-item" href="#">Contact</a>
+  </nav>
+</div>
 
+<div class="container">
 
+  <div class="blog-header">
+    <%= image_tag "logo_THP.png", alt: "Logo", width: 264, height: 64 %>
+    <h1 class="blog-title">The hacking project</h1>
+    <p class="lead blog-description">La formation pour apprendre à coder</p>
+  </div>
 
-<div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item" href="#">Description</a>
-          <a class="blog-nav-item" href="#">FAQ</a>
-          <a class="blog-nav-item" href="#">Contact</a>
-        </nav>
-      </div>
-    </div>
+  <div class="row">
 
-    <div class="container">
+    <div class="col-sm-8 blog-main">
 
-      <div class="blog-header">
-        <%= image_tag "logo_THP.png", alt: "Logo", width: 264, height: 64 %>
-        <p class="lead blog-description">La formation pour apprendre à coder</p>
-      </div>
+      <div class="blog-post">
+        <h2 class="blog-post-title">The Hacking Project</h2>
 
-      <div class="row">
+        
+        <hr>
+        
+        <h2>Pourquoi rejoindre THP ?</h2>
+        <p>Dans un monde où de nombreux métiers sont en mutation et où personne ne connait les métiers de demain, une seule certitude est présente : les programmations de système et le code seront omniprésents. Ceux qui sauront coder détiendront donc les clés du futur.</p>
+        <h3>Je veux rejoindre cette formation :</h3>
+        <form>
+	  <div class="form-row">
+	    <div class="form-group col-md-6">
+	      <label for="inputFirstName4">Prénom</label>
+	      <input type="text" class="form-control" id="inputFirstName4" placeholder="Prénom">
+	    </div>
+	    <div class="form-group col-md-6">
+	      <label for="inputLastName4">Nom</label>
+	      <input type="text" class="form-control" id="inputLastName4" placeholder="Nom">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="inputEmail4">Email</label>
+	    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+	  </div>
+	  <div class="form-row">
+	    <div class="form-group col-md-6">
+	      <label for="inputCity">Ville</label>
+	      <input type="text" class="form-control" id="inputCity">
+	    </div>
+	    <div class="form-group col-md-4">
+	      <label for="inputState">Pays</label>
+	      <select id="inputState" class="form-control">
+	        <option selected>...</option>
+	        <option>France</option>
+	        <option>Belgique</option>
+	        <option>Suisse</option>
+	        <option>Madagascar</option>
+	        <option>Autre</option>
+	      </select>
+	    </div>
+	  </div>
+	  <button type="submit" class="btn btn-primary">Recevoir nos cours</button>
+	</form>
+        
+        
+        <h3>Qui peut faire la formation</h3>
+        <p>Ouverte et accessible à tous, cette formation a pour objectif de
+        vous donner le clés secrètes de la programmation.
+        Grâce à un apprentissage en peer-learning, c’est-à-dire qu’il n’y a
+        pas de professeur et que les élèves vont devoir apprendre avec l’aide
+        de ressources concrètes, et surtout s’entraider, car la notion de travail
+        en équipe est et sera très importante dans l’apprentissage
+        (tous dans la même galère, ahah !).
+        Déjà 2 ans d’existence, ce qui a donc développé une grande communauté
+        à travers la France, qui plus est, très active et sera toujours présente
+        pour filer une coup de main. Vous l’aurez compris, l’entraide est un
+        vrai plus de cette formation.
+        Vous développerez diverses compétences à l’issue de THP dont
+        savoir travailler en équipe et être capable de développer une
+        application web de A à Z.
 
-        <div class="col-sm-8 blog-main">
+        On attend de vous que vous soyez sur-motivé car la formation reste courte
+        et donc très intense.</p>
+        
+     
+      </div><!-- /.blog-post -->
 
-          <div class="blog-post">
-            <h2 class="blog-post-title">The Hacking Project</h2>
+      <div class="blog-post">
+        <h3>Qu'est ce que vous allez apprendre à THP</h3>
+        
+          Ce que vous allez apprendre durant cette formation:
 
-            
-            <hr>
-            
-            <h2>Pourquoi rejoindre THP ?</h2>
-            <p>Dans un monde où de nombreux métiers sont en mutation et où personne ne connait les métiers de demain, une seule certitude est présente : les programmations de système et le code seront omniprésents. Ceux qui sauront coder détiendront donc les clés du futur.</p>
-            <h3>Je veux rejoindre cette formation :</h3>
-            <form>
-			  <div class="form-row">
-			    <div class="form-group col-md-6">
-			      <label for="inputFirstName4">Prénom</label>
-			      <input type="text" class="form-control" id="inputFirstName4" placeholder="Prénom">
-			    </div>
-			    <div class="form-group col-md-6">
-			      <label for="inputLastName4">Nom</label>
-			      <input type="text" class="form-control" id="inputLastName4" placeholder="Nom">
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <label for="inputEmail4">Email</label>
-			    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-			  </div>
-			  <div class="form-row">
-			    <div class="form-group col-md-6">
-			      <label for="inputCity">Ville</label>
-			      <input type="text" class="form-control" id="inputCity">
-			    </div>
-			    <div class="form-group col-md-4">
-			      <label for="inputState">Pays</label>
-			      <select id="inputState" class="form-control">
-			        <option selected>...</option>
-			        <option>France</option>
-			        <option>Belgique</option>
-			        <option>Suisse</option>
-			        <option>Madagascar</option>
-			        <option>Autre</option>
-			      </select>
-			    </div>
-			  </div>
-			  <button type="submit" class="btn btn-primary">Recevoir nos cours</button>
-			</form>
-            
-            
-            <h3>Qui peut faire la formation</h3>
-            <p>Ouverte et accessible à tous, cette formation a pour objectif de
-            vous donner le clés secrètes de la programmation.
-            Grâce à un apprentissage en peer-learning, c’est-à-dire qu’il n’y a
-            pas de professeur et que les élèves vont devoir apprendre avec l’aide
-            de ressources concrètes, et surtout s’entraider, car la notion de travail
-            en équipe est et sera très importante dans l’apprentissage
-            (tous dans la même galère, ahah !).
-            Déjà 2 ans d’existence, ce qui a donc développé une grande communauté
-            à travers la France, qui plus est, très active et sera toujours présente
-            pour filer une coup de main. Vous l’aurez compris, l’entraide est un
-            vrai plus de cette formation.
-            Vous développerez diverses compétences à l’issue de THP dont
-            savoir travailler en équipe et être capable de développer une
-            application web de A à Z.
+          <ul>
+          <li>Apprendre à travailler ensemble sur les projets
+          demandés tout le long de la formation </li>
+          <li>Gérer un projet avec Git et GitHub </li>
+          <li>Apprendre à coder avec Ruby </li>
+          <li>Connaître Ruby On Rails sur le bout des doigts </li>
+          <li>Pimper votre application web avec HTML, CSS, Boostrap, javascript </li>
+          <li>Présenter votre projet final devant un jury. </li>
+        </ul>
+        <h2 class="blog-post-title">Sample blog post</h2>
+        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
-            On attend de vous que vous soyez sur-motivé car la formation reste courte
-            et donc très intense.</p>
-            
-         
-          </div><!-- /.blog-post -->
+        <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+        <hr>
+        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        <blockquote>
+          <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </blockquote>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <h2>Heading</h2>
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <h3>Inscription à la newsletter</h3>
 
-          <div class="blog-post">
-            <h3>Qu'est ce que vous allez apprendre à THP</h3>
-            
-              Ce que vous allez apprendre durant cette formation:
+        <form action="/register" method ="POST">
+	        <div class="form-row">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+	          <div class="form-group col-md-6">
+  			      <label for="inputFirstName4">Prénom*</label>
+  			      <input type="text" class="form-control" id="inputFirstName4" placeholder="Prénom" name="first_name">
+  			    </div>
+  			    <div class="form-group col-md-6">
+  			      <label for="inputLastName4">Nom*</label>
+  			      <input type="text" class="form-control" id="inputLastName4" placeholder="Nom" name="last_name">
+  			    </div>
+            <div class="form-group col-md-12">
+  			      <label for="inputEmail4">Email*</label>
+  			      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+            </div>
+  			    <div class="form-group col-md-6">
+  			      <label for="inputCity">Ville</label>
+  			      <input type="text" class="form-control" id="inputCity" name="city">
+  			    </div>
+  			    <div class="form-group col-md-6">
+  			      <label for="inputState">Pays</label>
+  			      <select id="inputState" class="form-control" name="country">
+  			        <option selected></option>
+  			        <option>France</option>
+  			        <option>Belgique</option>
+  			        <option>Suisse</option>
+  			        <option>Madagascar</option>
+  			        <option>Autre</option>
+  			      </select>
+  			    </div>
+            <div class="form-group col-md-12">
+              <button type="submit" class="btn btn-primary">Recevoir nos cours</button>
+              <p>* = champs obligatoires</p>
+            </div>
+          </div>
+  			 </form>
 
+        <h3>Sub-heading</h3>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <ul>
+          <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+          <li>Donec id elit non mi porta gravida at eget metus.</li>
+          <li>Nulla vitae elit libero, a pharetra augue.</li>
+        </ul>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+        <ol>
+          <li>Vestibulum id ligula porta felis euismod semper.</li>
+          <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+          <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+        </ol>
+        <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">Another blog post</h2>
+        <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        <blockquote>
+          <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </blockquote>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">New feature</h2>
+        <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <ul>
+          <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+          <li>Donec id elit non mi porta gravida at eget metus.</li>
+          <li>Nulla vitae elit libero, a pharetra augue.</li>
+        </ul>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+      </div><!-- /.blog-post -->
+
+      <nav>
+        <ul class="pager">
+          <li><a href="#">Previous</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </nav>
+
+    </div><!-- /.blog-main -->
+
+    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+      <div class="sidebar-module sidebar-module-inset">
+        <h4>Témoignages</h4>
+        <p>Ce que nos élèves en pensent :</p>
+         <!--  
+            <ul id="">
+            <li><a href="#">Accueil</a></li>
+            <li>
+              <a href="#">Catégories</a>
               <ul>
-              <li>Apprendre à travailler ensemble sur les projets
-              demandés tout le long de la formation </li>
-              <li>Gérer un projet avec Git et GitHub </li>
-              <li>Apprendre à coder avec Ruby </li>
-              <li>Connaître Ruby On Rails sur le bout des doigts </li>
-              <li>Pimper votre application web avec HTML, CSS, Boostrap, javascript </li>
-              <li>Présenter votre projet final devant un jury. </li>
-            </ul>
-          </div><!-- /.blog-post -->
-
-          <nav>
-            <ul class="pager">
-              <li><a href="#">Previous</a></li>
-              <li><a href="#">Next</a></li>
-            </ul>
-          </nav>
-
-        </div><!-- /.blog-main -->
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>Témoignages</h4>
-            <p>Ce que nos élèves en pensent :</p>
-             <!--  
-                <ul id="">
-                <li><a href="#">Accueil</a></li>
-                <li>
-                  <a href="#">Catégories</a>
-                  <ul>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">Webdesign</a></li>
-                    <li><a href="#"<Autres</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Travaux</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Webdesign</a></li>
+                <li><a href="#"<Autres</a></li>
               </ul>
- --><select name="menu_destination" class="btn btn-primary dropdown-toggle"> 
+            </li>
+            <li><a href="#">Travaux</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+--><select name="menu_destination" class="btn btn-primary dropdown-toggle"> 
 
-     <option value="julien">Julien</option> 
+ <option value="julien">Julien</option> 
 
-     <option value="http://www.monsite.net/apropos.html">Kaliane</option> 
+ <option value="http://www.monsite.net/apropos.html">Kaliane</option> 
 
-     <option value="http://www.monsite.net/contact.html">Nous contacter</option> 
+ <option value="http://www.monsite.net/contact.html">Nous contacter</option> 
 
-     <option value="http://www.monsite.net/plan.html">Plan du site</option> 
+ <option value="http://www.monsite.net/plan.html">Plan du site</option> 
 
-   </select>
+</select>
 
 <!-- <optgroup label="le site">
 
-     <option value="http://www.monsite.net/accueil.html">Accueil</option> 
+ <option value="http://www.monsite.net/accueil.html">Accueil</option> 
 
-     <option value="http://www.monsite.net/apropos.html">Qui sommes-nous ?</option> 
+ <option value="http://www.monsite.net/apropos.html">Qui sommes-nous ?</option> 
 
-     <option value="http://www.monsite.net/contact.html">Nous contacter</option> 
+ <option value="http://www.monsite.net/contact.html">Nous contacter</option> 
 
-     <option value="http://www.monsite.net/plan.html">Plan du site</option> 
+ <option value="http://www.monsite.net/plan.html">Plan du site</option> 
 
 </optgroup> -->
 
-            <!--   <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle list-group-item" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Témoignages
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-menu" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div> -->
+        <!--   <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle list-group-item" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Témoignages
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-menu" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div> -->
 <!-- 
-            <div class="tabs">
-              <button class="btn-tabs" onclick="showProfile('julien')">Julien</button>
-              <button class="btn-tabs" onclick="showProfile('kaliane')">Kaliane</button>
-            </div> -->
+        <div class="tabs">
+          <button class="btn-tabs" onclick="showProfile('julien')">Julien</button>
+          <button class="btn-tabs" onclick="showProfile('kaliane')">Kaliane</button>
+        </div> -->
 
+      </div>
+      <div class="sidebar-module">
+        <h4>Julien Laville</h4> <hr>
+        <button class="julien">
+        <%= image_tag "temoignage_1.png", alt: "Témoignage 1", class: "temoignage-photo" %>
+        </button>
+        <hr>
+          <div class="julien-texte">
+            <p> <strong>Poste actuel :</strong> Développeur chez ClaraVista </p>
+            <p> <strong>Formation initiale :</strong>  Ecole IPSSI / Groupe IP-Formation </p> 
+            <p> <blockquote>J'ai fait beaucoup de boulots différents, mais surtout beaucoup de musique après mes études, pour finalement travailler dans différents bars. C'était très amusant certes, mais sur le long terme je savais que cela ne me conviendrait pas, j'ai commencé à réfléchir à une reconversion, et me suis naturellement tourné vers le web et la programmation. Un ami m'a parlé de THP, je l'ai rejoint tout de suite. La formation revêt énormément d'aspects qui m'ont enthousiasmé : Le peer-learning, le programme intense, Ruby et Ruby on Rails qui sont simplement passionnants, le programme couvre un large panel de langages et techniques. En projet final, nous avons travaillé sur le site de THP, c'était une expérience enrichissante. Grâce à THP, je commence un stage et mon projet de reconversion se concrétise plus que je ne l'aurais pensé."</blockquote>  </p>
           </div>
-          <div class="sidebar-module">
-            <h4>Julien Laville</h4> <hr>
-            <button class="julien">
-            <%= image_tag "temoignage_1.png", alt: "Témoignage 1", class: "temoignage-photo" %>
-            </button>
-            <hr>
-              <div class="julien-texte">
-                <p> <strong>Poste actuel :</strong> Développeur chez ClaraVista </p>
-                <p> <strong>Formation initiale :</strong>  Ecole IPSSI / Groupe IP-Formation </p> 
-                <p> <blockquote>J'ai fait beaucoup de boulots différents, mais surtout beaucoup de musique après mes études, pour finalement travailler dans différents bars. C'était très amusant certes, mais sur le long terme je savais que cela ne me conviendrait pas, j'ai commencé à réfléchir à une reconversion, et me suis naturellement tourné vers le web et la programmation. Un ami m'a parlé de THP, je l'ai rejoint tout de suite. La formation revêt énormément d'aspects qui m'ont enthousiasmé : Le peer-learning, le programme intense, Ruby et Ruby on Rails qui sont simplement passionnants, le programme couvre un large panel de langages et techniques. En projet final, nous avons travaillé sur le site de THP, c'était une expérience enrichissante. Grâce à THP, je commence un stage et mon projet de reconversion se concrétise plus que je ne l'aurais pensé."</blockquote>  </p>
-              </div>
-          </div>
+      </div>
 
-          <div class="sidebar-module" id="kaliane">
-            <h4>Kaliane Net</h4> <hr>
-            <a href="julien">
-            <%= image_tag "temoignage_2.png", alt: "Témoignage 1", class: "temoignage-photo" %>
-          </a>
-            <hr>
-            <p> <strong>Poste actuel :</strong> eCRM Consultant & Product Owner </p>
-            <p> <strong>Formation initiale :</strong>  Master e-business </p> 
-            <p> <blockquote>Avec mon master en Ebusiness, je travaillais en tant que consultante CRM et proxy Product owner chez AXA et j'ai démissionné pour THP. J'ai découvert THP par hasard sur Facebook en lisant l'article la crème de la crème. Ca m'a donné l'envie de me former en développement web et d'ajouter cette compétence sur mon CV. Ce qui a payé puisqu'aujourd'hui je travaille à la Société Générale en tant que consultante externe. Je suis chef de projet Chatbots et THP m'a permis d'avoir ce poste qui demande d'avoir des notions techniques. Les recruteurs m'ont même dit qu'ils m'auraient jamais proposé ce type de poste si je n'avais pas fait ce type de formation. </blockquote>  </p>
-          </div>
-        </div><!-- /.blog-sidebar -->
+      <div class="sidebar-module" id="kaliane">
+        <h4>Kaliane Net</h4> <hr>
+        <a href="julien">
+        <%= image_tag "temoignage_2.png", alt: "Témoignage 1", class: "temoignage-photo" %>
+      </a>
+        <hr>
+        <p> <strong>Poste actuel :</strong> eCRM Consultant & Product Owner </p>
+        <p> <strong>Formation initiale :</strong>  Master e-business </p> 
+        <p> <blockquote>Avec mon master en Ebusiness, je travaillais en tant que consultante CRM et proxy Product owner chez AXA et j'ai démissionné pour THP. J'ai découvert THP par hasard sur Facebook en lisant l'article la crème de la crème. Ca m'a donné l'envie de me former en développement web et d'ajouter cette compétence sur mon CV. Ce qui a payé puisqu'aujourd'hui je travaille à la Société Générale en tant que consultante externe. Je suis chef de projet Chatbots et THP m'a permis d'avoir ce poste qui demande d'avoir des notions techniques. Les recruteurs m'ont même dit qu'ils m'auraient jamais proposé ce type de poste si je n'avais pas fait ce type de formation. </blockquote>  </p>
+        <h4>About</h4>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+      </div>
+      <div class="sidebar-module">
+        <h4>Archives</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">March 2014</a></li>
+          <li><a href="#">February 2014</a></li>
+          <li><a href="#">January 2014</a></li>
+          <li><a href="#">December 2013</a></li>
+          <li><a href="#">November 2013</a></li>
+          <li><a href="#">October 2013</a></li>
+          <li><a href="#">September 2013</a></li>
+          <li><a href="#">August 2013</a></li>
+          <li><a href="#">July 2013</a></li>
+          <li><a href="#">June 2013</a></li>
+          <li><a href="#">May 2013</a></li>
+          <li><a href="#">April 2013</a></li>
+        </ol>
+      </div>
+      <div class="sidebar-module">
+        <h4>Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ol>
+      </div>
+    </div><!-- /.blog-sidebar -->
 
-      </div><!-- /.row -->
+  </div><!-- /.row -->
 
-    </div><!-- /.container -->
+</div><!-- /.container -->
 
-    <footer class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+<footer class="blog-footer">
+  <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>

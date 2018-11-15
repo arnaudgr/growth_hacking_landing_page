@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GrotwhHackingLandingPage</title>
+    <title>GrowthHackingLandingPage</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -38,6 +38,12 @@
   </head>
 
   <body>
+    <% flash.each do |key, value| %>
+      <% puts key %>
+      <div class="alert alert-<%= key %>">
+        <%= value %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
