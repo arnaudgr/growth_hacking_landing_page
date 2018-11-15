@@ -9,28 +9,9 @@ class UserMailer < ApplicationMailer
     # I am overriding the 'to' default
     mail(to: @user.email, subject: 'Do you have any spam?')
   end
-end
 
-
-
-
-
-   def delivery
+  def delivery
     UserMailer.welcome_email.deliver_now!
-   end
+  end
 
-end
-
-# pour indiquer à Mail de transformer une pièce jointe en pièce jointe, 
-# on appelle tout simplement inline sur la méthode des pièces jointes dans votre Mailer
-
-# def welcome
-#   attachments.inline['image.jpg'] = File.read('/path/to/image.jpg')
-# end
-
-
-
-
-
-	
 end

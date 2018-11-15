@@ -19,12 +19,15 @@ gem 'uglifier', '>= 1.3.0'
 ####### gem mailer charles ######
 
 gem 'mandrill-api'
-	
+gem 'devise'
+
 gem 'gibbon', '~> 1.2.0'
 
 gem 'dotenv', groups: [:development, :test]
 
 ######################################""
+
+gem 'twitter'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -72,3 +75,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Bot messenger
+gem 'facebook-messenger'
+gem 'nokogiri'
