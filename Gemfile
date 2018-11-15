@@ -18,9 +18,9 @@ gem 'uglifier', '>= 1.3.0'
 
 ####### gem mailer charles ######
 
-
+gem 'mandrill-api'
 	
-gem "gibbon"
+gem 'gibbon', '~> 1.2.0'
 
 gem 'dotenv', groups: [:development, :test]
 
