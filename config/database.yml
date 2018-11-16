@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: grotwh_hacking_landing_page_production
-  username: grotwh_hacking_landing_page
+  username: <%= ENV['GROTWH_HACKING_LANDING_PAGE_DATABASE_USER'] %>
   password: <%= ENV['GROTWH_HACKING_LANDING_PAGE_DATABASE_PASSWORD'] %>

@@ -1,8 +1,6 @@
 class UserMailer < ApplicationMailer
-
-
-# Default Mail Values
-  default from: 'cyril.calvez22100@gmail.com', to: { User.pluck(:email) }
+	# Default Mail Values
+  default from: 'cyril.calvez22100@gmail.com', to: User.pluck(:email)
 
   def welcome_email(user)
     @user = user
@@ -12,8 +10,6 @@ class UserMailer < ApplicationMailer
 
 
   def delivery
-    UserMailer.welcome_email.deliver_now!
+    welcome_email.deliver_now!
   end
-
-
 end
