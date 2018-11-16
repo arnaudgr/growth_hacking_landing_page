@@ -1,16 +1,16 @@
-require 'rubygems'
-require 'open-uri'
-require 'nokogiri'
+# require 'rubygems'
+# require 'open-uri'
+# require 'nokogiri'
 
-def get_all_the_urls_of_groups(url)
-    link_group = Array.new
-    doc = Nokogiri::HTML(open(url))
-    doc.css('//div[class="_3ul _gli _6pel"]').each do |link|
-    link_group << "https://www.facebook.com#{link['href']}"
-    end
-    puts link_group
+# def get_all_the_urls_of_groups(url)
+#     link_group = Array.new
+#     doc = Nokogiri::HTML(open(url))
+#     doc.css('//div[class="_3ul _gli _6pel"]').each do |link|
+#     link_group << "https://www.facebook.com#{link['href']}"
+#     end
+#     puts link_group
    # linkgood
-end
+# end
 
 
 
@@ -27,5 +27,5 @@ end
 #   end
 # end
 
-url = "https://www.facebook.com/search/str/etudiant/keywords_groups"
-get_all_the_urls_of_groups(url)
+# url = "https://www.facebook.com/search/str/etudiant/keywords_groups"
+# get_all_the_urls_of_groups(url)
