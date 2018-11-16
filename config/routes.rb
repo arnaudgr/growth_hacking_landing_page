@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+ 
   post "/register", to: 'contacts#create'
+  post "/", to: 'contacts#subscribe'
   root to: 'controller#general'
 	get "/general", to: 'controller#general'
 	get "/student", to: 'controller#student'

@@ -16,31 +16,21 @@ class ContactsController < ApplicationController
       redirect_to general_path
   	end
   end
-#################MAILER#######################""
-
-#envoimail/semaine
-  def run
-    User.find_each do |user|
-      UserMailer.with(user: user).weekly_summary.deliver_now
-	 end
-  end
 
 
-   def welcome_mail
-    @user = User.new(params [:user])
+  def subscribe
+    @list_id = Gibbon::API.api_key = ENV["MAILCHIMP_API_KEY"]
+    gibbon = Gibbon::Request.new
+
+    gibbon.lists(@list_id).members.create(
+      body: {
+      email_address: params[:email][:address],
+      status: "subscribed"
+      }
+    )
 
     respond_to do |format|
-      if @user.save
-        # Dire au UserMailer d'envoyer un email de bienvenue après l'enregistrement
-        UserMailer.with(user: @user).welcome_email.deliver_later
-
-        format.html { redirect_to(@user, notice: 'User was successfully created.') }
-        format.json { render json: @user, status: :created, location: @user }
-
-      else
-        format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
+      format.json{render :json => {:message => "You have been Successfully added to the list! :)"}}
     end
   end
 end
