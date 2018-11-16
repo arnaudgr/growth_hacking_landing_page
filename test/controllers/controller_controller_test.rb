@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class ControllerControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+    test "should get general" do
+	    get general_path
+	    assert_response :success
+	end 
 end

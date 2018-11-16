@@ -8,7 +8,9 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
+
   # config.secret_key = '36c2ca970e827ba6c90a2295937118477c2f8a67a27b9d67c5aa8bfcdfe9215f26921dff40c3cc54ae11f9053c3bfe391d16ec9d7ab246099a52696a2bc34879'
+
   
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -114,6 +116,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
+
   # config.pepper = '979bfaa7d36b2c7d598ff2f452bb3b51a8bab2273ade0584cae99eaaf8ccf28a27f28bacb27ec1f1d99e19e72fb0ddf6c3d4598c9bb399c5232a38a548622d2a'
 
   # Send a notification to the original email when the user's email is changed.
@@ -163,7 +166,9 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length.
+
   config.password_length = 6..128
+
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
@@ -209,7 +214,10 @@ Devise.setup do |config|
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.
+
+
   config.reset_password_within = 6.hours
+
 
   # When set to false, does not sign a user in automatically after their password is
   # reset. Defaults to true, so a user is signed in automatically after a reset.
