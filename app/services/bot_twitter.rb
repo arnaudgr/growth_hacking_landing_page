@@ -1,7 +1,7 @@
 require 'twitter'
 require 'dotenv'
 
-class BotTWitter
+class BotTwitter
   def tweet_pro
     client = Twitter::REST::Client.new do |config|
       config.consumer_key        = ENV['TWITTER_API_KEY']

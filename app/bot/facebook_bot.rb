@@ -4,10 +4,14 @@ Dotenv.load
 
 include Facebook::Messenger
 
-Facebook::Messenger::Subscriptions.subscribe(access_token: ENV['ACCESS_TOKEN_MESSENGER'])
+class FacebookBot
+	def perform
+		Facebook::Messenger::Subscriptions.subscribe(access_token: ENV['ACCESS_TOKEN_MESSENGER'])
 
-Bot.on :message do |message|
-  message.reply(text: 'Hello, human!')
+		Bot.on :message do |message|
+		  message.reply(text: 'Hello, human!')
+		end
+	end
 end
 
 # Bot.deliver({
