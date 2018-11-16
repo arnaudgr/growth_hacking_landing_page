@@ -2,10 +2,11 @@
 
 Projet réalisé par : team Rennes.
 
-Notre application envoie du steak frèrot.e ( j'espère qu'elle marche parce qu'à l'heure ou j'écris ces lignes, c'est toujours l'incertitude)  
+Notre application envoie du steak frèrot.e ( j'espère qu'elle marche parce qu'à l'heure ou j'écris ces lignes, c'est toujours l'incertitude)
 
+Lien vers la production à cette adresse : https://grotwh-hacking-landing-page.herokuapp.com
 
-Quoiqu'il en soit, voila ses capacités : 
+Quoiqu'il en soit, voila ses capacités :
  
  ## 3 Landing pages 
  

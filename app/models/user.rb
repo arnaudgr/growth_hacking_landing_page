@@ -1,3 +1,4 @@
+
 class User < ApplicationRecord
 
   # Include default devise modules. Others available are:
@@ -8,20 +9,15 @@ class User < ApplicationRecord
  
   after_create :subscribe_user_to_mailing_list
  
-  
- 
-  def subscribe_user_to_mailing_list
-    SubscribeUserToMailingListJob.perform_later(self)
-  end
+
+  public
 
 
- # def send_welcome_email_to_user
- #    UserMailer.welcome_email(self).deliver_later
- # end
-  
+    def subscribe_user_to_mailing_list
+      SubscribeUserToMailingListJob.perform_later(self)
+    end
+
+    def send_welcome_email_to_user
+      UserMailer.welcome_email(self).deliver_later
+    end
 end
-
-
-
-
-

@@ -4,6 +4,7 @@ class ContactsController < ApplicationController
       flash[:notice] = "Au moins un champ obligatoire est manquant"
       redirect_to general_path
     else
+      puts "ELSSEEEEEE"
       @user = User.new
       @user.first_name = params[:first_name]
       @user.last_name = params[:last_name]
@@ -20,10 +21,9 @@ class ContactsController < ApplicationController
 #envoimail/semaine
   def run
     User.find_each do |user|
-    UserMailer.with(user: user).weekly_summary.deliver_now
-
-	end
-end
+      UserMailer.with(user: user).weekly_summary.deliver_now
+	 end
+  end
 
 
    def welcome_mail
@@ -33,7 +33,7 @@ end
       if @user.save
         # Dire au UserMailer d'envoyer un email de bienvenue après l'enregistrement
         UserMailer.with(user: @user).welcome_email.deliver_later
-        
+
         format.html { redirect_to(@user, notice: 'User was successfully created.') }
         format.json { render json: @user, status: :created, location: @user }
 
